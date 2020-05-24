@@ -102,7 +102,11 @@ h1.heading-extra-margin-bottom, h2.heading-extra-margin-bottom, h3.heading-extra
 
 
 .btn.btn-sm {
-	padding:10px 18px;
+	padding:6px 10px;
+	font-size:12px;
+}
+.btn.btn-xs {
+	padding:6px 10px;
 	font-size:12px;
 }
 .btn.btn-danger {
@@ -113,6 +117,22 @@ h1.heading-extra-margin-bottom, h2.heading-extra-margin-bottom, h3.heading-extra
 	background: rgb(0, 0, 0);
 	color: #fff;
 }
+.btn.btn-warning {
+	color: #212529;
+	background-color: #ffc107;
+	border-color: #ffc107;
+  }
+  .btn.btn-success {
+	color: #fff;
+	background-color: #28a745;
+	border-color: #28a745;
+  }
+  
+  .btn.btn-success:hover {
+	color: #fff;
+	background-color: #218838;
+	border-color: #1e7e34;
+  }
 button.btn:focus {
 	box-shadow:none;
 }
@@ -314,7 +334,6 @@ header#masthead-pro:after {
 header#masthead-pro h1 {
 	line-height:1;
 	font-size:5px;
-	margin:0px 55px 0px 0px;
 	padding:0px;
 	float:left;
 }
@@ -360,7 +379,7 @@ nav#site-navigation-pro {
 	line-height:1;
 	color:#e12626;
 	font-size:1.8em;
-	padding:37px 20px;
+	padding:37px 15px;
 }
 .sf-menu a i {
 	color: #2191FB;
@@ -4758,7 +4777,7 @@ li.flex-active-slide.progression_studios_animate_right .fam-slider-caption-align
 .need-certain-toy {
 	width: 100%;
 	padding: 4% 0;
-	background: url(../images/doodles1-bg.png) #ff0000;;
+	background: url(../images/doodles1-bg.png) #cf2020;;
 }
 a:not(:hover) .cat-title {
     transition: .3s;
@@ -4791,7 +4810,7 @@ a:not(:hover) .cat-title span{
 	background: url(../images/topix.png) no-repeat;
 	width: 100%;
 	height: 170px;
-	padding: 50px 0px 0px 40px;
+	padding: 40px 0px 0px 40px;
 	text-shadow: 0 1px 1px #000;
 }
 .section-header h3 {
@@ -5386,7 +5405,7 @@ a .circle-item .cat-title {
     line-height: 20px;
     text-align: center;
     color: #fff;
-    background: #FF3636;
+    background: rgb(57, 103, 252);
     border-radius: 50%;
     top: 17px;
 	font-size: 12px;
@@ -5803,7 +5822,7 @@ a:not(:hover) .buy-now span{
   /* Search */
   
   #wrap {
-	margin: 10px 50px 0px;
+	margin: 10px 40px 0px;
 	display: inline-block;
 	position: relative;
 	height: 60px;
@@ -5890,6 +5909,7 @@ a:not(:hover) .buy-now span{
 	background: #D4D4D4;
 	list-style: none; 
 	overflow: hidden;
+	margin: 0;
 }
 .breadcrumb>li+li:before {
 	padding: 0;
@@ -6037,4 +6057,71 @@ form .error {
 }
 .myform a:hover {
     color: #000;
+}
+
+/* Related Products */
+.related-product {
+	padding: 20px 10px;
+}
+
+/* Rating & Comments */
+.product-review {
+	width: 100%;
+	padding: 2% 0;
+	background-color: #f1f1f1;
+}
+.btn-grey{
+    background-color:#D8D8D8;
+	color:#FFF;
+}
+.rating-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px 15px 20px 15px;
+	border-radius:3px;
+}
+.bold{
+	font-weight:700;
+}
+.padding-bottom-7{
+	padding-bottom:7px;
+}
+
+.review-block{
+	background-color:#FAFAFA;
+	border:1px solid #EFEFEF;
+	padding:15px;
+	border-radius:3px;
+	margin-bottom:15px;
+}
+.review-block-name{
+	font-size:1.2em;
+	margin:10px 0 0 0;
+}
+.review-block-date{
+	font-size:1.2em
+}
+.review-block-rate{
+	font-size:1.2em;
+	margin-bottom:15px;
+}
+.review-block-title{
+	font-size:1.3em;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.review-block-description{
+	font-size:1.5em;
+}
+.animated {
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    transition: height 0.2s;
+}
+
+.stars
+{
+    margin: 20px 0;
+    font-size: 24px;
+    color: #d17581;
 }
