@@ -4,6 +4,7 @@
 03. FLEXSLIDER LANDING PAGE
 04. SCROLL TO TOP BUTTON
 05. Registration Page On/Off Clickable Items
+06. Product List and Grid View
 */
 
 jQuery(document).ready(function($) {
@@ -174,4 +175,12 @@ $(document).ready(function(){
 				}
 		});
 		
+	});
+/*
+=============================================== 06. Product List and Grid View  ===============================================
+*/
+
+	$(document).ready(function() {
+		$('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+		$('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
 	});

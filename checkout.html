@@ -386,12 +386,34 @@
                             <hr class="mb-4">
                             <div class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input" id="same-address">
-                              <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                              <label class="custom-control-label btn btn-primary" for="same-address" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+									Shipping to a different address?
+								  </label>
+								  
                             </div>
-                            <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="save-info">
-                              <label class="custom-control-label" for="save-info">Save this information for next time</label>
-                            </div>
+							<div class="collapse pt-3" id="collapseExample">
+								<h4 class="mb-3">Shipping address</h4>
+								<div class="mb-3">
+									<label for="address">Address</label>
+									<input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+									<div class="invalid-feedback">
+									  Please enter your shipping address.
+									</div>
+								  </div>
+					  
+								  <div class="row">
+									<div class="col-md-5 mb-3">
+									  <label for="country">City</label>
+									  <select class="custom-select d-block w-100" id="country" required>
+										<option value="">Choose...</option>
+										<option>Lagos</option>
+									  </select>
+									  <div class="invalid-feedback">
+										Please select a valid city.
+									  </div>
+									</div>
+								  </div>
+							  </div>
                             <hr class="mb-4">
                 
                             <h4 class="mb-3">Payment</h4>
