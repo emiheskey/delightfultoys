@@ -529,12 +529,35 @@
 												<form accept-charset="UTF-8" action="" method="post">
 													<input id="ratings-hidden" name="rating" type="hidden"> 
 													<textarea class="form-control animated" cols="70" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
-									
-													<div class="">
-														<div class="stars starrr" data-rating="0"></div>
-														<a class="btn btn-danger btn-lg" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+													<div class="form-group" id="rating-ability-wrapper">
+														<label class="control-label" for="rating">
+														<span class="field-label-header">How would you rate this product?</span><br>
+														<span class="field-label-info"></span>
+														<input type="hidden" id="selected_rating" name="selected_rating" value="" required="required">
+														</label>
+														<h2 class="bold rating-header" style="">
+														<span class="selected-rating">0</span><small> / 5</small>
+														</h2>
+														<button type="button" class="btnrating btn btn-default" data-attr="1" id="rating-star-1">
+															<i class="fa fa-star" aria-hidden="true"></i>
+														</button>
+														<button type="button" class="btnrating btn btn-default" data-attr="2" id="rating-star-2">
+															<i class="fa fa-star" aria-hidden="true"></i>
+														</button>
+														<button type="button" class="btnrating btn btn-default" data-attr="3" id="rating-star-3">
+															<i class="fa fa-star" aria-hidden="true"></i>
+														</button>
+														<button type="button" class="btnrating btn btn-default" data-attr="4" id="rating-star-4">
+															<i class="fa fa-star" aria-hidden="true"></i>
+														</button>
+														<button type="button" class="btnrating btn btn-default" data-attr="5" id="rating-star-5">
+															<i class="fa fa-star" aria-hidden="true"></i>
+														</button>
+													</div>
+													 <div class="">
+														<p><a class="btn btn-danger btn-lg" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
 														<span class="fa fa-remove"></span>Cancel</a>
-														<button class="btn btn-success btn-lg" type="submit">Save</button>
+														<button class="btn btn-success btn-lg" type="submit">Save</button></p>
 													</div>
 												</form>
 											</div>
@@ -836,6 +859,8 @@
 		<script src="assets/js/afterglow.min.js" defer></script><!-- Video Player JS Plugin -->		
 		<script src="assets/js/script.js" defer></script><!-- Custom Document Ready JS -->
 		<script src="assets/js/review.js"></script>
+		<script src="assets/js/rating.js"></script>
+		
 				<!-- Bootstrap Dropdown Hover JS -->
 				<script>
 					$(document).ready(function(){

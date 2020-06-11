@@ -13,7 +13,12 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icon180.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon16.png">
-		
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<link rel="stylesheet" href="range.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
+		<script src="range.js"></script>
 		<title>Delightful Toy Shop - Catalog</title>
 	</head>
 	<body>
@@ -299,20 +304,15 @@
 									</ul>
 									</div> <div class="filters-group">
 									<h5>Price</h5>
-									<ul>
-									<li>
-									<input type="checkbox" autocomplete="off" name="price[]" value="$0-50" id="facet-fe52a1a7261c6985b6e5128cae82a557">
-									<label for="facet-fe52a1a7261c6985b6e5128cae82a557">$0-50</label>
-									</li>
-									<li>
-									<input type="checkbox" autocomplete="off" name="price[]" value="$50-100" id="facet-59ce3b8090aa4de664e9ecbe9d175923">
-									<label for="facet-59ce3b8090aa4de664e9ecbe9d175923">$50-100</label>
-									</li>
-									<li>
-									<input type="checkbox" autocomplete="off" name="price[]" value="$100-150" id="facet-de3b4b3965a54445aec094d4f6b4302a">
-									<label for="facet-de3b4b3965a54445aec094d4f6b4302a">$100-150</label>
-									</li>
-									</ul>
+									<div class="price-range">
+										<div class="row">
+											<div class="col-md-6" style="margin-top: 50px;">
+												<div class="slider-wrapper green">
+													<input class="input-range" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-tooltip="always" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
+												</div>
+											</div>
+										</div>
+									</div>
 									</div> <div class="filters-group">
 									<h5>Type</h5>
 									<ul>
