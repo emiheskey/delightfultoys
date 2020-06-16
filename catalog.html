@@ -14,11 +14,7 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icon.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icon16.png">
 		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-		<link rel="stylesheet" href="range.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
-	
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/bootstrap-slider.min.js"></script>
-		<script src="range.js"></script>
+		<link rel="stylesheet" href="assets/css/bootstrap-slider.css">
 		<title>Delightful Toy Shop - Catalog</title>
 	</head>
 	<body>
@@ -41,7 +37,9 @@
 											<a class="nav-link" id="preschool-tab" data-toggle="tab" href="#preschool" role="tab" aria-controls="preschool" aria-selected="false">Preschool Toys</a>
 											<a class="nav-link" id="furniture-tab" data-toggle="tab" href="#furniture" role="tab" aria-controls="v-pills-settings" aria-selected="false">Furniture</a>
 											<a class="nav-link" id="baby-toy-tab" data-toggle="tab" href="#baby-toy" role="tab" aria-controls="baby-toy" aria-selected="false">Baby Toys</a>
+											<a class="nav-link" href="#">View more <i class="fa fa-chevron-right"></i></a>
 										  </div>
+										  
 									</div>
 									<div class="col-md-9">
 										<div class="tab-content" id="v-pills-tabContent">
@@ -178,6 +176,10 @@
 							<a href="#"><i class="fas fa-user"></i></a>
 						</li>
 						<li class="normal-item-pro">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <span class="cart_quantity">2</span>
+						</li>
+						<li class="normal-item-pro">
 							<div class="mini_cart_wrapper">
 								<a href="javascript:void(0)"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <i class="fa fa-angle-down"></i></a>
                                 <span class="cart_quantity">2</span>
@@ -278,12 +280,13 @@
                             <form>
 								<h3>Narrow by:</h3>
 								<div class="actions-top">
-									<button class="btn mr-5">Apply</button>
-									<a href="#" class="clear-filters">Clear filters</a>
+									<!-- <button class="btn mr-5">Apply</button>
+									<a href="#" class="clear-filters">Clear filters</a> -->
 								</div>
 								<div class="filters">
 									<div class="filters-group">
 									<h5>Age</h5>
+									<form>
 									<ul>
 									<li>
 									<input type="checkbox" autocomplete="off" name="age[]" value="0-12 Months" id="facet-e79897b90db6f27d6872d5fcb0427d49">
@@ -301,19 +304,50 @@
 									<input type="checkbox" autocomplete="off" name="age[]" value="4+ Years" id="facet-e62ca9072ae2e030bf582de9a0c65c45">
 									<label for="facet-e62ca9072ae2e030bf582de9a0c65c45">4+ Years</label>
 									</li>
-									</ul>
-									</div> <div class="filters-group">
-									<h5>Price</h5>
-									<div class="price-range">
-										<div class="row">
-											<div class="col-md-6" style="margin-top: 50px;">
-												<div class="slider-wrapper green">
-													<input class="input-range" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-tooltip="always" data-slider-max="100" data-slider-step="1" data-slider-value="14"/>
-												</div>
+									<li>
+										<div class="row no-gutters">
+											<div class="form-group col-md-5 mr-2">
+												<label for="month">From:</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>0 month</option>
+													<option>1 month</option>
+													<option>2 months</option>
+													<option>3 months</option>
+													<option>4 months</option>
+													<option>5 months</option>
+													<option>6 months</option>
+													<option>7 months</option>
+													<option>8 months</option>
+													<option>9 months</option>
+													<option>10 months</option>
+													<option>11 months</option>
+													<option>12 months</option>
+												</select>
+											</div>
+											<div class="form-group col-md-5">
+												<label for="month">To:</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>12 months</option>
+													<option>1 year</option>
+													<option>2 years</option>
+													<option>3 years</option>
+													<option>4 years</option>
+													<option>5 years</option>
+												</select>
 											</div>
 										</div>
-									</div>
-									</div> <div class="filters-group">
+									</li>
+									<li><p><button type="submit" class="btn btn-green-pro px-4">Filter</button></p></li>
+									</ul>
+									
+									</form>
+									</div> 
+									<div class="filters-group mb-4">
+									<h5>Price</h5>
+									<b>&#8358;0</b> <input id="ex2" type="text" class="span2" value="" data-slider-min="0" data-slider-max="50000" data-slider-step="5" data-slider-value="[2000,9500]"/> <b>&#8358;50000</b>
+									<p class="mt-3"><button type="submit" class="btn btn-green-pro px-4">Filter</button></p>
+									</div> 
+									<div class="filters-group">
 									<h5>Type</h5>
 									<ul>
 									<li>
@@ -348,6 +382,7 @@
 									<input type="checkbox" autocomplete="off" name="category_type[]" value="Walker/Ride-ons" id="facet-419c7c9a66316e5c94c09d5497ffd2c8">
 									<label for="facet-419c7c9a66316e5c94c09d5497ffd2c8">Walker/Ride-ons</label>
 									</li>
+									<li><p><button type="submit" class="btn btn-green-pro px-4">Filter</button></p></li>
 									</ul>
 									</div> <div class="filters-group">
 									<h5>Features</h5>
@@ -364,6 +399,7 @@
 									<input type="checkbox" autocomplete="off" name="features[]" value="Most Popular Toys" id="facet-24d9fae23139c9607b9c321b28c4ad17">
 									<label for="facet-24d9fae23139c9607b9c321b28c4ad17">Most Popular Toys</label>
 									</li>
+									<li><p><button type="submit" class="btn btn-green-pro px-4">Filter</button></p></li>
 									</ul>
 									</div> <div class="filters-group">
 									<h5>Collection</h5>
@@ -388,6 +424,7 @@
 									<input type="checkbox" autocomplete="off" name="collection[]" value="Lil' Ocean Explorers" id="facet-54e3856982d3983a9e65e3287f209e21">
 									<label for="facet-54e3856982d3983a9e65e3287f209e21">Lil' Ocean Explorers</label>
 									</li>
+									<li><p><button type="submit" class="btn btn-green-pro px-4">Filter</button></p></li>
 									</ul>
 									</div>
 									</div>
@@ -442,266 +479,190 @@
 						<div class="page-view">
 							<div class="row">
 								<div class="col-md-6 col-sm-6">
-									<ul class="th-page">
-										<li><a href="#" class="active" title="Grid View"><i class="fas fa-th"></i></a></li>
-										<li><a href="#" title="List View"><i class="fas fa-list"></i></a></li>
-									</ul>
+									<div class="pull-right">
+										<div class="btn-group mb-3">
+											<a class="btn btn-info" id="list">
+												<i class="fas fa-list"></i>  List
+											</a>
+											<a class="btn btn-info" id="grid">
+												<i class="fas fa-th"></i> Grid
+											</a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="product-catalog">
 							<!-- Product row -->
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="product-detail.html">
-												<img class="pic-1" src="assets/images/home-products/1.Jpg">
-											</a>
+							<div id="products" class="row view-group">
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/products/1.Jpg" alt="" /></a>
 										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand Name</p>
+												<p class="group inner desc list-group-item-text">
+													Product Description goes here</p>
+											<div class="row">
+												<div class="col-md-12">
+													<p class="lead">
+														N21,000</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-xs-12 col-md-6">
+													<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+												</div>
+												<div class="col-xs-12 col-md-6">
+													<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+												</div>
 											</div>
 										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/2.Jpg">
-											</a>
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/1.Jpg" alt="" /></a>
 										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy name</a></h3>
-											<div class="price">N8000
-												<span>N12,000</span>
-											</div>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand name</p>
+												<div class="row">
+													<div class="col-md-12">
+														<p class="lead">
+															N21,000</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+													</div>
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+													</div>
+												</div>
 										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/3.Jpg">
-											</a>
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/6.Jpg" alt="" /></a>
 										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand Name</p>
+												<div class="row">
+													<div class="col-md-12">
+														<p class="lead">
+															N21,000</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+													</div>
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+													</div>
+												</div>
 										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/4.Jpg">
-											</a>
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/3.Jpg" alt="" /></a>
 										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand Name</p>
+												<p class="desc">
+													Product Description goes here</p>
+												<div class="row">
+													<div class="col-md-12">
+														<p class="lead">
+															N21,000</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+													</div>
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+													</div>
+												</div>
 										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
+									</div>
+								</div>
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/5.Jpg" alt="" /></a>
+										</div>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand Name</p>
+												<div class="row">
+													<div class="col-md-12">
+														<p class="lead">
+															N21,000</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+													</div>
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+													</div>
+												</div>
+										</div>
+									</div>
+								</div>
+								<div class="item col-xs-3 col-lg-3">
+									<div class="thumbnail card">
+										<div class="img-event">
+											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/4.Jpg" alt="" /></a>
+										</div>
+										<div class="caption card-body">
+											<h4 class="group card-title inner list-group-item-heading">
+												<a href="#">Product title</a></h4>
+											<p class="group inner list-group-item-text">
+												Brand Name</p>
+												<div class="row">
+													<div class="col-md-12">
+														<p class="lead">
+															N21,000</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-success btn-block" href="#"><i class="fa fa-shopping-cart"></i></a>
+													</div>
+													<div class="col-xs-12 col-md-6">
+														<a class="btn btn-info btn-block" href="#"><i class="fas fa-heart"></i></a>
+													</div>
+												</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<!-- Product row end -->
-							<!-- Product row start -->
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/4.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/5.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy name</a></h3>
-											<div class="price">N8000
-												<span>N12,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/6.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/2.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- product row ends -->
-							<!-- Product row starts -->
-							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/6.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/5.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy name</a></h3>
-											<div class="price">N8000
-												<span>N12,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/4.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-6">
-									<div class="product-grid6">
-										<div class="product-image6">
-											<a href="#">
-												<img class="pic-1" src="assets/images/home-products/3.Jpg">
-											</a>
-										</div>
-										<div class="product-content">
-											<h3 class="title"><a href="#">Toy Name</a></h3>
-											<div class="price">N11,000
-												<span>N14,000</span>
-											</div>
-										</div>
-										<ul class="social">
-											
-											<li><a href="" data-tip="Add to Wishlist"><i class="fa fa-shopping-bag"></i></a></li>
-											<li><a href="" data-tip="Add to Cart"><i class="fa fa-shopping-cart"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<!-- Product row ends -->
 						</div>
 						<div class="sort-tab">
 							<form>
@@ -813,8 +774,9 @@
 		<script src="assets/js/jquery.flexslider-min.js" defer></script><!-- FlexSlider JS Plugin -->
 		<script src="assets/js/afterglow.min.js" defer></script><!-- Video Player JS Plugin -->		
 		<script src="assets/js/script.js" defer></script><!-- Custom Document Ready JS -->
-				<!-- Bootstrap Dropdown Hover JS -->
-				<script>
+		<script src="assets/js/bootstrap-slider.min.js"></script>
+		<script>var slider = new Slider('#ex2', {});</script>
+		<script>
 					$(document).ready(function(){
 			$(".dropdown").hover(            
 				function() {
@@ -831,6 +793,6 @@
 		  e.preventDefault()
 		  $(this).tab('show')
 		})
-				</script>
+		</script>
 	</body>
 </html>

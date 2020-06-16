@@ -146,9 +146,9 @@ button.btn:focus {
 	font-size:14px;
 }
 
-.btn i {
+/* .btn i {
 	margin-right:8px;
-}
+} */
 
 /*
 =============================================== 03. HIGHLIGHT COLORS ===============================================
@@ -4855,7 +4855,7 @@ a:not(:hover) .cat-title span{
 }
 .section-header-center {
 	background: url(../images/topix2.png) no-repeat;
-	width: 30%;
+	width: 400px;
 	height: 170px;
 	margin: 0 auto;
 	padding: 50px 0px 0px 40px;
@@ -5212,7 +5212,7 @@ a .circle-item .cat-title {
     }
 }
 
-/********************* Shopping Demo-6 **********************/
+/********************* Shopping **********************/
 .product-grid6,.product-grid6 .product-image6{overflow:hidden}
 .product-grid6{text-align:center;position:relative;transition:all .5s ease 0s; border: 2px dashed #6ba1ad; padding: 4% 2%; border-radius: 10px;}
 .product-grid6:hover{box-shadow:0 0 10px rgba(0,0,0,.3)}
@@ -5238,6 +5238,85 @@ a .circle-item .cat-title {
 .product-grid6 .social li a:after{content:'';height:15px;width:15px;border-radius:0;transform:translateX(-50%) rotate(45deg);top:-20px;z-index:-1}
 .product-grid6 .social li a:hover:after,.product-grid6 .social li a:hover:before{opacity:1}
 @media only screen and (max-width:990px){.product-grid6{margin-bottom:30px}
+}
+.view-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 0;
+	margin-bottom: 0;
+}
+.view-group p {
+	margin-bottom: 5px;
+}
+.view-group .card {
+	border: 2px dashed #6ba1ad
+}
+.view-group h4 {
+	color: #e60303;
+	font-size: 1.2em;
+}
+.view-group p.lead {
+	font-size: 1.5em;
+}
+.thumbnail
+{
+    margin-bottom: 30px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+.item.grid-group-item .desc, .desc {
+	display: none;
+}
+.item.list-group-item .desc {
+	display: block;
+	font-size: 1.2em;
+}
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 30px;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+	border: 0;
+}
+.item.list-group-item .img-event {
+    float: left;
+    width: 30%;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.item.list-group-item .caption
+{
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item:after
+{
+    clear: both;
 }
 
 .footer-links {
@@ -5295,7 +5374,7 @@ a .circle-item .cat-title {
 }
 .catalog-filters .actions-top {
     border-bottom: 3px solid  #e12626;
-    padding: 15px;
+    padding: 5px;
 }
 .catalog-filters .filter-group, .catalog-filters .filters{
 	margin: 15px 0;
@@ -5310,11 +5389,17 @@ a .circle-item .cat-title {
 .catalog-filters .filters ul li {
 	font-size: 1.2em;
 }
+.catalog-filters .filters-group ul {
+	height: 200px;
+	overflow: auto;
+	border: 1px dashed #ccc;
+	border-radius: 10px;
+}
 .product-catalog {
 	margin: 4% 0;
 }
 .product-catalog .row {
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
 .sort-tab {
 	margin: 2% 0 0 0;
@@ -6730,3 +6815,6 @@ form .error {
   .slider .active svg path {
 	stroke-width: 2;
   }
+
+
+  
