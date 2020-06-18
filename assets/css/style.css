@@ -5260,6 +5260,12 @@ a .circle-item .cat-title {
 .view-group p.lead {
 	font-size: 1.5em;
 }
+.view-group p.lead span {
+	margin-right: 10px;
+	text-decoration: line-through;
+	font-size: .8em;
+	color: #868686;
+}
 .thumbnail
 {
     margin-bottom: 30px;
@@ -5268,6 +5274,7 @@ a .circle-item .cat-title {
     -moz-border-radius: 0px;
     border-radius: 0px;
 }
+
 .item.grid-group-item .desc, .desc {
 	display: none;
 }
@@ -5291,10 +5298,36 @@ a .circle-item .cat-title {
     float: left;
     width: 30%;
 }
+.sale-tag {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.sale-tag .on-sale, .sale-tag .on-arrival, .sale-tag .top-selling {
+	display: block;
+	padding: 0 10px;
+	border-radius: 5px;
+	margin: 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+.sale-tag .on-sale {
+	background: #017d0f;
+	color: #fff;
+}
+.sale-tag .on-arrival {
+	background: #ff5106;
+	color: #fff;
+}
+.sale-tag .top-selling {
+	background: #067eff;
+	color: #fff;
+}
 
 .item.list-group-item .list-group-image
 {
-    margin-right: 10px;
+	margin-right: 10px;
+	width: 220px;
 }
 .item.list-group-item .thumbnail
 {
