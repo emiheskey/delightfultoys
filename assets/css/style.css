@@ -5470,8 +5470,8 @@ a .circle-item .cat-title {
 .thumb-navigation-links {
     margin-top: 5px;
 }
-.pagination { width: auto; float: right;}
-.pagination>li>a, .pagination>li>span { border-radius: 50% !important;margin: 0 5px; padding: 0 5px;}
+.pagination { width: auto; }
+.pagination>li>a, .pagination>li>span { border-radius: 10% !important;margin: 0 5px; padding: 5px 10px; font-size: 1.5em;}
 .pagination .active { background: #f9f9f9; border-radius: 50%}
 
 .mega-dropdown {
@@ -6849,5 +6849,46 @@ form .error {
 	stroke-width: 2;
   }
 
+  /* Brands */
+  .brands {
+	  width: 100%;
+  }
 
-  
+  .brands img {
+	  border: 3px solid #ededed;
+  }
+  .brands img:hover {
+	border: 5px solid #d00202;
+	transition: ease-out;
+	transition-duration: .3s;
+  }
+  /* Categories */
+  .cate {
+	  width: 100%;
+  }
+  .cate .card {
+	  margin: 0;
+  }
+  .cate .btn {
+	  background: transparent;
+	  border: none;
+	  font-family: 'Boogaloo', cursive;
+  }
+  .cate .btn:hover {
+	  color: royalblue;
+	  text-decoration: none;
+  }
+  .cate ul {
+	  list-style: none;
+	  padding: -10px 0 0 10px;
+	  overflow: hidden;
+  }
+  .cate ul li {
+	  width: 200px;
+	  float: left;
+	  margin-right: 20px;
+	  padding: 10px 0px;
+  }
+  .cate ul li a:hover {
+	  text-decoration: underline;
+  }
