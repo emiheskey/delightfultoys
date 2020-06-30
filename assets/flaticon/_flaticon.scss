@@ -1,0 +1,66 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 06/05/2020 14:30
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-activity:before { content: "\f100"; }
+.flaticon-arrow-pointing-the-center-of-a-circular-button-of-two-concentric-circles:before { content: "\f101"; }
+.flaticon-drama:before { content: "\f102"; }
+.flaticon-creativity:before { content: "\f103"; }
+.flaticon-abc-block:before { content: "\f104"; }
+.flaticon-girl:before { content: "\f105"; }
+.flaticon-responsibility:before { content: "\f106"; }
+.flaticon-pencil:before { content: "\f107"; }
+.flaticon-solution:before { content: "\f108"; }
+.flaticon-creativity-1:before { content: "\f109"; }
+.flaticon-engine:before { content: "\f10a"; }
+.flaticon-gears:before { content: "\f10b"; }
+.flaticon-book:before { content: "\f10c"; }
+    
+    $font-Flaticon-activity: "\f100";
+    $font-Flaticon-arrow-pointing-the-center-of-a-circular-button-of-two-concentric-circles: "\f101";
+    $font-Flaticon-drama: "\f102";
+    $font-Flaticon-creativity: "\f103";
+    $font-Flaticon-abc-block: "\f104";
+    $font-Flaticon-girl: "\f105";
+    $font-Flaticon-responsibility: "\f106";
+    $font-Flaticon-pencil: "\f107";
+    $font-Flaticon-solution: "\f108";
+    $font-Flaticon-creativity-1: "\f109";
+    $font-Flaticon-engine: "\f10a";
+    $font-Flaticon-gears: "\f10b";
+    $font-Flaticon-book: "\f10c";
