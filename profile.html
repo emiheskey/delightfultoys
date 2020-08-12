@@ -333,7 +333,7 @@
                                             </div>
                                         </div>
                                         <div class="card-footer">
-                                            <a href="#" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#perModal">Edit <i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#editName">Edit <i class="fa fa-edit"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -350,7 +350,7 @@
                                             </div>
                                         </div>
                                         <div class="card-footer">
-                                            <a href="#" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#AddModal">Edit <i class="fa fa-edit"></i></a>
+                                            <a href="#" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#editAdd">Edit <i class="fa fa-edit"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -414,8 +414,73 @@
 		</footer>
 		
 		<a href="#0" id="pro-scroll-top"><i class="fas fa-chevron-up"></i></a>
+<!-- Edit Profile Modal -->
+<div class="modal fade" id="editName" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Edit Personal Information</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+				  <label for="fname">First Name</label>
+				  <input type="text" class="form-control" id="fname" value="Emmanuel">
+				</div>
+				<div class="form-group">
+					<label for="lname">Last Name</label>
+					<input type="text" class="form-control" id="lname" value="Enemakwu">
+				</div>
+				<div class="form-group">
+				  <label for="email">Email</label>
+				  <input type="email" class="form-control" id="email" value="person@mail.com" disabled>
+				</div>
+				<div class="form-group">
+					<label for="phone">Phone</label>
+					<input type="text" class="form-control" id="phone" value="08067070812">
+				</div>
+				<div class="form-group">
+					<label for="address">Contact Address</label>
+					<input type="text" class="form-control" id="address" value="08 Wuse Close, Abuja">
+				</div>
+				<button type="submit" class="btn btn-success">Save</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
 		
-		
+  <!-- Edit Billing Address Modal -->
+<div class="modal fade" id="editAdd" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <h5 class="modal-title" id="exampleModalLabel">Edit Personal Information</h5>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body">
+			<form>
+				<div class="form-group">
+					<label for="address">Delivery Address</label>
+					<textarea class="form-control" placeholder="No 1, Ola Popoola Close, Off Apalowo Drive, Saraha 2 Estate, Lokogoma"></textarea>
+				</div>
+				<div class="form-group">
+					<select class="form-control">
+						<option selected>Abuja</option>
+						<option selected>Lagos</option>
+					</select>
+				</div>
+				<button type="submit" class="btn btn-success">Save</button>
+			  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
 
 		<!-- Required Framework JavaScript -->
 		<script src="assets/js/jquery-3.3.1.min.js"></script><!-- jQuery -->

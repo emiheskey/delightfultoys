@@ -281,7 +281,7 @@
                                 <thead>
                                     <tr>
                                         <th>Product</th>
-                                        <th>Quantity</th>
+                                        <th class="text-center">Quantity</th>
                                         <th class="text-center">Unit Price</th>
                                         <th class="text-center">Total</th>
                                         <th> </th>
@@ -298,7 +298,11 @@
                                             </div>
                                         </div></td>
                                         <td class="col-sm-2 col-md-2 text-center" style="text-align: center">
-                                            <input type="number" value="1" min="1" max="200" step="1"/>
+                                            <form id='myform' method='POST' action='#'>
+												<input type='button' value='-' class='qtyminus' field='quantity' />
+												<input type='text' name='quantity' value='0' class='qty' />
+												<input type='button' value='+' class='qtyplus' field='quantity' />
+											</form>
                                         </td>
                                         <td class=" text-center"><strong>&#8358;4.87</strong></td>
                                         <td class="col-sm-1 col-md-1 text-center"><strong>&#8358;14.61</strong></td>
@@ -317,7 +321,11 @@
                                             </div>
                                         </div></td>
                                         <td class="col-sm-2 col-md-2 text-center" style="text-align: center">
-                                            <input type="number" value="1" min="1" max="200" step="1"/>
+                                            <form id='myform' method='POST' action='#'>
+												<input type='button' value='-' class='qtyminus' field='quantity2' />
+												<input type='text' name='quantity2' value='0' class='qty' />
+												<input type='button' value='+' class='qtyplus' field='quantity2' />
+											</form>
                                         </td>
                                         <td class="col-md-1 text-center"><strong>&#8358;4.99</strong></td>
                                         <td class="col-md-1 text-center"><strong>&#8358;9.98</strong></td>
@@ -455,6 +463,7 @@
         <script src="assets/js/bootstrap-input-spinner.js"></script>
         <script>
             $("input[type='number']").inputSpinner()
-        </script>
+		</script>
+		<script src="assets/js/increment.js"></script>
 	</body>
 </html>

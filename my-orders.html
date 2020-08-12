@@ -320,6 +320,15 @@
                                <div class="row my-3">
                                    <div class="col-12">
 									   <h4>My Orders</h4>
+									   <div class="row">
+										<form class="form-inline">
+											<div class="form-group mx-sm-2 mb-2">
+											  <label for="search" class="sr-only">Search</label>
+											  <input type="text" class="form-control" id="search" placeholder="Search by Product name, Ref or Status">
+											</div>
+											<button type="submit" class="btn btn-secondary mb-2">Search</button>
+										  </form>
+									   </div>
                                        <div class="row">
                                         <table class="table table-bordered table-striped">
                                             <thead>
@@ -340,7 +349,7 @@
                                             <td>653167 </td>
                                             <td>50 </td>
                                             <td>
-                                            <a href="#" class="text-white btn btn-success btn-sm view">View Details</a>
+                                            <a href="#OrderDetails" data-toggle="modal" class="text-white btn btn-success btn-sm view">View Details</a>
                                             </td>
                                         </tr>
                                          <tr>
@@ -381,7 +390,20 @@
                                         </tr>
                                         
                                           </tbody>
-                                        </table>
+										</table>
+										<nav aria-label="Page navigation example">
+											<ul class="pagination pagination-sm">
+											  <li class="page-item disabled">
+												<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+											  </li>
+											  <li class="page-item"><a class="page-link" href="#">1</a></li>
+											  <li class="page-item"><a class="page-link" href="#">2</a></li>
+											  <li class="page-item"><a class="page-link" href="#">3</a></li>
+											  <li class="page-item">
+												<a class="page-link" href="#">Next</a>
+											  </li>
+											</ul>
+										  </nav>
                                        </div>
 
                                    </div>
@@ -446,8 +468,72 @@
 		
 		<a href="#0" id="pro-scroll-top"><i class="fas fa-chevron-up"></i></a>
 		
+		<!-- Modal -->
+		<div class="modal fade" id="OrderDetails" tabindex="-1" role="dialog" aria-labelledby="OrderDetails" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="OrderDetails">Order Details</h5>
+				</div>
+				<div class="modal-body">
+					<div class="table_desc">
+						<div class="cart_page table-responsive">
+							<div class="pl-3 pt-3">
+								<h5>Order ID: 234</h5>
+								<h5>Order Date: 23/05/2020</h4>
+							</div>
+						<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Image</th>
+								<th>Product</th>
+								<th>Price (NGN)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/1.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Name</a>
+								<br>X 1 at &#8358;6500 per item</td>
+								<td>&#8358;6500.00</td>
+							</tr>
 		
-
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/2.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Name</a>
+								<br>X 2 at &#8358;4500 per item</td>
+								<td>&#8358;9000.00</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/3.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Namet</a>
+								<br>X 4 at &#8358;2000 per item</td>
+								<td>&#8358;8000.00</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 16px; text-align: right;">Shipping:</td>
+								<td style="font-size: 16px;">&#8358; 1000</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 16px; text-align: right;">Discount:</td>
+								<td style="font-size: 16px; color: red;"> - 0</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 20px; text-align: right;">Total Cost:</td>
+								<td style="font-size: 20px;">&#8358; 24,500</td>
+							</tr>
+		
+						</tbody>
+					</table>   
+						</div>  
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		<!-- Required Framework JavaScript -->
 		<script src="assets/js/jquery-3.3.1.min.js"></script><!-- jQuery -->
 		<script src="assets/js/popper.min.js" defer></script><!-- Bootstrap Popper/Extras JS -->
