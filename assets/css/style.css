@@ -7129,3 +7129,90 @@ input.qtyminus { width:40px; height:30px;}
 			page-break-before: always
 		}
 	  }
+
+	  /* Quick view for product details*/
+
+	.quick-view {
+		position: absolute;
+		z-index: 1;
+		right: 10px;
+	}
+.quick-view a {
+		width: 30px;
+		height: 30px;
+		border: #858585 2px solid;
+		border-radius: 10px;
+		display: block;
+		color: #858585;
+	}
+.quick-view a:hover {
+	border: #C1272C 2px solid;
+	color: #C1272C;
+}
+/* Toggle */
+.switch {
+	display: inline-block;
+	height: 34px;
+	position: relative;
+	width: 60px;
+  }
+  
+  .switch input {
+	display:none;
+  }
+  
+  .togl {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+  }
+  
+  .togl:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height: 26px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width: 26px;
+  }
+  
+  input:checked + .togl {
+	background-color: #66bb6a;
+  }
+  
+  input:checked + .togl:before {
+	transform: translateX(26px);
+  }
+  
+  .togl.round {
+	border-radius: 34px;
+  }
+  
+  .togl.round:before {
+	border-radius: 50%;
+  }
+  
+  /* Transaction History */
+  .status-success {
+	  border-radius: 7px;
+	  border: 1px solid #f9f9f9;
+	  padding: 5px 10px;
+	  text-align: center;
+	  background: #01a414;
+	  color: #fff;
+  }
+  .status-failure {
+	border-radius: 7px;
+	border: 1px solid #f9f9f9;
+	padding: 5px 10px;
+	text-align: center;
+	background: #b60031;
+	color: #fff;
+}
