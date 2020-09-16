@@ -272,11 +272,10 @@
                         <!--left sidebar-->
                        <div class="col-md-3 pr-md-4">
                            <div class="sidebar-left">
-							   
                                <!--sidebar menu-->
                                <ul class="list-unstyled sidebar-menu pl-md-2 pr-md-0">
                                    <li>
-                                       <a class="sidebar-item active d-flex justify-content-between align-items-center" href="dashboard.html">
+                                       <a class="sidebar-item d-flex justify-content-between align-items-center" href="dashboard.html">
                                            Dashboard
                                            <span class="fas fa-tachometer-alt"></span>
                                        </a>
@@ -288,7 +287,7 @@
                                        </a>
                                    </li>
                                    <li>
-                                       <a class="sidebar-item d-flex justify-content-between align-items-center" href="my-orders.html">
+									   <a class="sidebar-item d-flex justify-content-between align-items-center" href="my-orders.html">
                                            Orders
                                            <span class="fas fa-shopping-cart"></span>
                                        </a>
@@ -300,7 +299,7 @@
                                        </a>
 								   </li>
 								   <li>
-									<a class="sidebar-item d-flex justify-content-between align-items-center" href="testimonial.html">
+									<a class="sidebar-item active d-flex justify-content-between align-items-center" href="testimonial.html">
 										Submit Testimonials
 										<span class="fas fa-comment"></span>
 									</a>
@@ -312,7 +311,7 @@
                                        </a>
                                    </li>
                                    <li>
-                                       <a class="sidebar-item d-flex justify-content-between align-items-center" href="index.html">
+                                       <a class="sidebar-item d-flex justify-content-between align-items-center" href="#">
                                            Sign out
                                            <span class="fas fa-sign-out-alt"></span>
                                        </a>
@@ -324,98 +323,31 @@
                        <!--Content-->
                        <div class="col-md-9">
                            <div class="dashboard-area">
-                               <div class="row my-3">
+                               <div class="row">
                                    <div class="col-12">
-									   <p class="lead">Welcome, Emmanuel</p>
-									   <hr>
-                                       <h4>Dashboard</h4>
-                                       <div class="row py-4">
-                                        <div class="col-lg-4 col-sm-6">
-                                            <a class="member-item" href="my-orders.html">
-                                                <div class="card mb-2 mb-md-5 py-3">
-                                                    <div class="content">
-                                                        <div class="row">
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="icon-big text-warning text-center">
-                                                                    <i class="fas fa-shopping-cart"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="numbers">
-                                                                    <p>Orders</p>
-                                                                    112
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <a class="member-item" href="wallet.html">
-                                                <div class="card mb-2 mb-md-5 py-3">
-                                                    <div class="content">
-                                                        <div class="row">
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="icon-big text-info text-center" title="1 new comment">
-                                                                    <i class="fas fa-wallet"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="numbers">
-                                                                    <p>Wallet</p>
-                                                                    454
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="col-lg-4 col-sm-6">
-                                            <a class="member-item" href="#">
-                                                <div class="card mb-2 mb-md-5 py-3">
-                                                    <div class="content">
-                                                        <div class="row">
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="icon-big text-danger text-center">
-                                                                    <i class="fas fa-gift"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="numbers">
-                                                                    <p>Your Wishlist</p>
-                                                                    6
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-										</div>
-										<div class="col-lg-4 col-sm-6">
-                                            <a class="member-item" href="my-orders.html">
-                                                <div class="card mb-2 mb-md-5 py-3">
-                                                    <div class="content">
-                                                        <div class="row">
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="icon-big text-warning text-center">
-                                                                    <i class="fas fa-medal"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <div class="numbers">
-                                                                    <p>Loyalty Points</p>
-																	12
-																	
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
+									   <h4>Submit Testimonials</h4>
+									   <div style="border-top: 1px solid #ccc;" class="py-3">
+										<form>
+											<div class="form-group row">
+											<label class="col-sm-2 col-form-label">Title</label>
+											<div class="col-sm-10">
+												<input type="text" class="form-control" placeholder="Title of Testimony">
+											</div>
+											</div>
+											<div class="form-group row">
+											<label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+											<div class="col-sm-10">
+												<textarea class="form-control" cols="10" placeholder="Please type in your testimony"></textarea>
+											</div>
+											</div>
+											<div class="form-group row">
+												<div class="col-sm-2"></div>
+												<div class="col-sm-10">
+													<button type="submit" class="btn btn-success btn-lg">Submit</button>
+												</div>
+											</div>
+										</form>
+									   </div>
                                    </div>
                                </div>
                            </div>
@@ -478,8 +410,72 @@
 		
 		<a href="#0" id="pro-scroll-top"><i class="fas fa-chevron-up"></i></a>
 		
+		<!-- Modal -->
+		<div class="modal fade" id="OrderDetails" tabindex="-1" role="dialog" aria-labelledby="OrderDetails" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <h5 class="modal-title" id="OrderDetails">Order Details</h5>
+				</div>
+				<div class="modal-body">
+					<div class="table_desc">
+						<div class="cart_page table-responsive">
+							<div class="pl-3 pt-3">
+								<h5>Order ID: 234</h5>
+								<h5>Order Date: 23/05/2020</h4>
+							</div>
+						<table class="table table-striped">
+						<thead>
+							<tr>
+								<th>Image</th>
+								<th>Product</th>
+								<th>Price (NGN)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/1.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Name</a>
+								<br>X 1 at &#8358;6500 per item</td>
+								<td>&#8358;6500.00</td>
+							</tr>
 		
-
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/2.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Name</a>
+								<br>X 2 at &#8358;4500 per item</td>
+								<td>&#8358;9000.00</td>
+							</tr>
+							<tr>
+								<td><a href="#"><img src="assets/images/home-products/3.Jpg" width="100" alt="product image"></a></td>
+								<td><a href="#">Product Namet</a>
+								<br>X 4 at &#8358;2000 per item</td>
+								<td>&#8358;8000.00</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 16px; text-align: right;">Shipping:</td>
+								<td style="font-size: 16px;">&#8358; 1000</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 16px; text-align: right;">Discount:</td>
+								<td style="font-size: 16px; color: red;"> - 0</td>
+							</tr>
+							<tr>
+								<td colspan="2" style="font-size: 20px; text-align: right;">Total Cost:</td>
+								<td style="font-size: 20px;">&#8358; 24,500</td>
+							</tr>
+		
+						</tbody>
+					</table>   
+						</div>  
+					</div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		<!-- Required Framework JavaScript -->
 		<script src="assets/js/jquery-3.3.1.min.js"></script><!-- jQuery -->
 		<script src="assets/js/popper.min.js" defer></script><!-- Bootstrap Popper/Extras JS -->
