@@ -486,6 +486,9 @@
 												<div class="top-selling">
 													Top Selling
 												</div>
+												<div class="wholesale-icon" data-toggle="tooltip" data-placement="bottom" title="Wholesale Available">
+													<img src="assets/images/sale.png">
+												</div>
 											</div>
 										</div>
 										<div class="caption card-body">
@@ -593,6 +596,11 @@
 									<div class="thumbnail card">
 										<div class="img-event">
 											<a href="product-detail.html"><img class="group list-group-image img-fluid" src="assets/images/home-products/3.Jpg" alt="" /></a>
+											<div class="sale-tag">
+												<div class="wholesale-icon" data-toggle="tooltip" data-placement="bottom" title="Wholesale Available">
+													<img src="assets/images/sale.png">
+												</div>
+											</div>
 										</div>
 										<div class="caption card-body">
 											<h4 class="group card-title inner list-group-item-heading">
@@ -948,5 +956,11 @@
 		  $(this).tab('show')
 		})
 		</script>
+		<script>
+			$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+			})
+		</script>
+		
 	</body>
 </html>
