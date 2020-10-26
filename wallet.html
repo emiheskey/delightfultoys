@@ -336,8 +336,8 @@
 													<i class="fa fa-money-bill-wave mr-3"></i> Fund Wallet
 												</button>
 												<div class="dropdown-menu">
-												<a class="dropdown-item" href="#">Fund through Bank Transfer</a>
-												<a class="dropdown-item" href="#">Fund through Debit/Credit Card</a>
+												<a class="dropdown-item" href="#bankTransfer" data-toggle="modal">Fund through Bank Transfer</a>
+												<a class="dropdown-item" href="#CreditCard" data-toggle="modal">Fund through Debit/Credit Card</a>
 												</div>
 											</div>
                                                 <a href="view-transaction.html" class="btn btn-warning"><i class="fa fa-file-invoice mr-3"></i> View Transactions</a>
@@ -441,6 +441,72 @@
         <script src="assets/js/bootstrap-input-spinner.js"></script>
         <script>
             $("input[type='number']").inputSpinner()
-        </script>
+		</script>
+		<!-- Modal -->
+		<div class="modal fade" id="bankTransfer" tabindex="-1" aria-labelledby="bankTransferLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="bankTransferLabel">Bank Details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				Bank Details
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- Bank Details Modal -->
+		<div class="modal fade" id="CreditCard" tabindex="-1" aria-labelledby="CreditCardLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="CreditCardLabel">Pay via Debit/Credit Card</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label>
+							How much funds to do you want to add to your wallet?
+						</label>
+						<input type="text" placeholder="minimum 5000" class="form-control">
+						<p>You will be directed to our secure online payment gateway</p>
+						<p><img src="assets/images/paystack-ii.png" width="400"></p>
+					</div>
+				</form>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-success btn-lg">PROCEED</button>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- Credit/Debit Modal -->
+		<div class="modal fade" id="bankTransfer" tabindex="-1" aria-labelledby="bankTransferLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="bankTransferLabel">Bank Details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				Bank Details
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+			</div>
+		</div>
 	</body>
 </html>
