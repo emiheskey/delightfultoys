@@ -7063,7 +7063,7 @@ input.qtyminus { width:40px; height:30px;}
 		font-size: 1.2em
 	  }
 	  
-	  .invoice table .qty,.invoice table .total,.invoice table .unit {
+	  .invoice table .qty,.invoice table .total,.invoice table .unit, .invoice table .gift-wrap {
 		text-align: right;
 		font-size: 1.2em
 	  }
@@ -7074,7 +7074,7 @@ input.qtyminus { width:40px; height:30px;}
 		background: #3a6d00;
 	  }
 	  
-	  .invoice table .unit {
+	  .invoice table .unit, .invoice table .gift-wrap {
 		background: #ddd
 	  }
 	  
@@ -7221,4 +7221,39 @@ input.qtyminus { width:40px; height:30px;}
 	text-align: center;
 	background: #b60031;
 	color: #fff;
+}
+.scrollbar {
+	position: fixed;
+	width: 120px;
+	right: 0;
+	top: 0;
+	z-index: 1;
+	
+	
+}
+.scrollbar ul {
+	list-style: none;
+	background: #fff;
+	margin-top: 200px;
+	border-radius: 5px 0px 0px 5px;
+	padding: 0 10px;
+	-webkit-box-shadow: -11px 17px 49px -29px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 17px 49px -29px rgba(0,0,0,0.75);
+box-shadow: -11px 17px 49px -29px rgba(0,0,0,0.75);
+}
+.scrollbar ul li {
+	font-size: 16px;
+	margin-bottom:5px;
+}
+.scrollbar ul li a{
+	display: block;
+	padding: 5px 10px;
+}
+html { scroll-behavior: smooth;}
+
+.send-wishlist {
+	padding: 10px 0;
+}
+.send-wishlist .form-control {
+	margin-bottom: 20px;
 }

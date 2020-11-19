@@ -168,7 +168,7 @@
 							<a href="">Learn more</a>
 						</li>
 						<li class="normal-item-pro">
-							<a href="">Private Sales</a>
+							<a href="">Wholesale</a>
 						</li>
 						<li class="normal-item-pro">
 							<a href="#"><i class="fas fa-user"></i></a>
@@ -251,7 +251,7 @@
 						<a href="#">Shop Now</a>
 					</li>
 					<li class="normal-item-pro">
-						<a href="#">Private Sales</a>
+						<a href="#">Wholesale</a>
 					</li>
 					<li class="normal-item-pro">
 						<a href="#">FAQs</a>
@@ -294,6 +294,8 @@
 				<div class="clearfix"></div>
 				<!-- Product by Age -->
 				<div class="wn-list mt-5 cate">
+					<button type="button" class="btn btn-primary">Expand/Collapse All</button>
+
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="accordion" id="accordionExample">
@@ -373,18 +375,18 @@
                               </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion" id="accordionExample2">
                                 <div class="card">
                                   <div class="card-header" id="heading4">
                                     <h2 class="mb-0">
-                                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
                                         Category #4
                                         <span class="badge badge-primary badge-pill">8</span>
                                       </button>
                                     </h2>
                                   </div>
                               
-                                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
+                                  <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample2">
                                     <div class="card-body">
                                       <ul>
                                           <li><a href="#">Sub-category 1</a></li>
@@ -408,7 +410,7 @@
                                       </button>
                                     </h2>
                                   </div>
-                                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                                  <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample2">
                                     <div class="card-body">
                                         <ul>
                                             <li><a href="#">Sub-category 1</a></li>
@@ -433,7 +435,7 @@
                                       </button>
                                     </h2>
                                   </div>
-                                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample">
+                                  <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordionExample2">
                                     <div class="card-body">
                                         <ul>
                                             <li><a href="#">Sub-category 1</a></li>
@@ -480,7 +482,9 @@
 							<h4>Feel free to contact us via phone or email</h4>
 
 							<p>27, Oyewole Street by Shyllon Junction, Ilupeju. <br>35, Fola Osibo Road, Lekki Phase 1. Lagos, Nigeria.</p>
-							
+							<p>07066259526 - Lekki Store<br>
+								09085025198 - Ilupeju Store<br>
+								08185963219 - Helpdesk </p>
 							<p><a href="">group@delightfultoyshop.com </a></p>
 							<div class="social">
 								<a href="#" target="_blank"><img src="assets/images/icon-fb-min.png"></a>
@@ -558,6 +562,23 @@ $('..nav-link').on('hover', function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
+		</script>
+		<script>
+			$(".btn-primary").click(function(){
+    
+    if ($(this).data("closedAll")) {
+        $(".collapse").collapse("show");
+    }
+    else {
+        $(".collapse").collapse("hide");
+    }
+    
+    // save last state
+    $(this).data("closedAll",!$(this).data("closedAll")); 
+});
+
+// init with all closed
+$(".btn-primary").data("closedAll",true);
 		</script>
 	</body>
 </html>

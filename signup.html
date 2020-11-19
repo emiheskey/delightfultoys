@@ -243,7 +243,7 @@
 						<a href="#">Shop Now</a>
 					</li>
 					<li class="normal-item-pro">
-						<a href="#">Private Sales</a>
+						<a href="#">Wholesale</a>
 					</li>
 					<li class="normal-item-pro">
 						<a href="#">FAQs</a>
@@ -309,7 +309,8 @@
 							<label class="form-check-label" for="exampleCheck1">I accept the <a href="#">Terms and Conditions</a></label>
 						  </div>
                         <div class="col-md-12 text-center mb-3 mt-4">
-                            <button type="submit" class=" btn btn-block mybtn btn-login tx-tfm btn-lg">Get Started For Free</button>
+                            <button type="submit" class="g-recaptcha btn btn-block mybtn btn-login tx-tfm btn-lg" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' 
+							data-action='submit'>Get Started For Free</button>
                         </div>
                         <div class="col-md-12 ">
                             <div class="form-group">
@@ -329,7 +330,9 @@
 							<h4>Feel free to contact us via phone or email</h4>
 
 							<p>27, Oyewole Street by Shyllon Junction, Ilupeju. 35, Fola Osibo Road, Lekki Phase 1. Lagos, Nigeria.</p>
-							
+							<p>07066259526 - Lekki Store<br>
+								09085025198 - Ilupeju Store<br>
+								08185963219 - Helpdesk </p>
 							<p><a href="">group@delightfultoyshop.com </a></p>
 							<div class="social">
 								<a href="#" target="_blank"><img src="assets/images/icon-fb-min.png"></a>
@@ -409,6 +412,13 @@
         <script src="assets/js/bootstrap-input-spinner.js"></script>
         <script>
             $("input[type='number']").inputSpinner()
-        </script>
+		</script>
+		 <script src="https://www.google.com/recaptcha/api.js"></script>
+		 <script>
+			function onSubmit(token) {
+			  document.getElementById("demo-form").submit();
+			}
+		  </script>
+		 
 	</body>
 </html>
