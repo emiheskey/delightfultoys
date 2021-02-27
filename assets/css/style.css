@@ -5220,9 +5220,9 @@ a .circle-item .cat-title {
 .product-grid6:hover .product-content{opacity:0}
 .product-grid6 .product-content-top{padding:12px 12px 10px;transition:all .5s ease 0s}
 .product-grid6:hover .product-content-top{opacity:1}
-.product-grid6 .title{font-size:20px;font-weight:600;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s}
-.product-grid6 .title span { font-size: 14px;}
-.product-grid6 .title a{color:rgb(184, 0, 0)}
+.product-grid6 .title{font-size:20px;font-weight:600;text-transform:capitalize;margin:0 0 10px;transition:all .3s ease 0s; word-wrap: break-word; }
+.product-grid6 .title span { font-size: 11px; width: 100%; word-break: break-all;}
+.product-grid6 .title a{color:rgb(184, 0, 0); display: block; overflow: hidden; }
 .product-grid6 .title a:hover{color:#2e86de}
 .product-grid6 .price{font-size:18px;font-weight:600;color:#2e86de}
 .product-grid6 .price span{color:#999;font-size:15px;font-weight:400;text-decoration:line-through;margin-left:7px;display:inline-block}
