@@ -34,6 +34,11 @@
 		p { padding:0 !important; margin:0 !important } 
 		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 		.mcnPreviewText { display: none !important; }
+		img.img-product {
+			width: 50px;
+			margin: 10px 20px 10px 0px;
+			vertical-align: middle;
+		}
 
 				
 		/* Mobile styles */
@@ -127,15 +132,24 @@
 												<td class="p30-15" style="padding: 60px 30px;">
 													<table width="100%" border="0" cellspacing="0" cellpadding="0">
 														<tr>
-															<td class="h1 pb25" style="color:#000000; font-family:'Playfair Display', Georgia,serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">Thanks for ordering!</td>
+															<td class="h1 pb25" style="color:#000000; font-family:'Playfair Display', Georgia,serif; font-size:40px; line-height:46px; text-align:center; padding-bottom:25px;">Order Confirmation</td>
 														</tr>
 														<tr>
                                                             <td class="text-center pb25" style="color:#666666; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:30px; text-align:center; padding-bottom:25px;">Hi Emmanuel,<br>
                                                             <p>
-                                                                Thanks for ordering. Here are the details of your order:
+                                                                Thanks for ordering. Your world is about to look a lot different. We would send another email when your order is shipped.
                                                             </p></td>
                                                         </tr>
+														<tr>
+															<td class="h1 pb25" style="color:#8c8700; font-family:'Playfair Display', Georgia,serif; font-size:25px; line-height:30px; text-align:center; padding-bottom:25px;">Order No: 23456<br>
+															<div style="background-color: #ababab; height: 1px; margin: 10px 0px;"></div>
+															</td>
+														</tr>
+														<tr>
+															<td class="h1 pb25" style="color:#4a4a4a; font-family:'Playfair Display', Georgia,serif; font-size:20px; line-height:26px; text-align: left; padding-bottom:25px;">Items Ordered</td>
+														</tr>
                                                         <tr>
+															
                                                             <td>
                                                                 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff" style="color:#666666; font-family:'Muli', Arial,sans-serif; font-size:14px; line-height:30px; text-align:center; padding-bottom:25px;">
                                                                     <thead style="background-color: #f9f9f9;">
@@ -147,14 +161,18 @@
                                                                     <tbody>
                                                                         <tr style="border-bottom: 1px solid #ccc;">
                                                                             <td>1</td>
-                                                                            <td>Item Name</td>
-                                                                            <td>1</td>
+                                                                            <td>
+																				<img src="images/t2_image1.jpg" class="img-product">
+																				Item Name</td>
+                                                                            <td>x1</td>
                                                                             <td>&#8358; 23,000</td>
                                                                         </tr>
                                                                         <tr style="border-bottom: 1px solid #ccc; background-color: #f9f9f9;">
                                                                             <td>2</td>
-                                                                            <td>Item Name</td>
-                                                                            <td>1</td>
+                                                                            <td>
+																				<img src="images/t2_image2.jpg" class="img-product">
+																				Item Name</td>
+                                                                            <td>x1</td>
                                                                             <td>&#8358; 23,000</td>
                                                                         </tr>
                                                                         <tr style="border-bottom: 1px solid #ccc;">
