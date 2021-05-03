@@ -4978,6 +4978,12 @@ a .circle-item .cat-title {
     -ms-transition: all 150ms ease 0s;
     transition: all 150ms ease 0s;
 }
+h4.card-title {
+	overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 /* .card {
 	padding-bottom: 30px;
 } */
@@ -5476,8 +5482,8 @@ a .circle-item .cat-title {
 .thumb-navigation-links {
     margin-top: 5px;
 }
-.pagination { width: auto; }
-.pagination>li>a, .pagination>li>span { border-radius: 10% !important;margin: 0 5px; padding: 5px 10px; font-size: 1.5em;}
+.pagination { width: auto; height: 40px; }
+.pagination>li>a, .pagination>li>span { border-radius: 10% !important;margin: 0px 2px 2px 2px; padding: 5px 12px; font-size: 1.5em;}
 .pagination .active { background: #f9f9f9; border-radius: 50%}
 
 .mega-dropdown {
@@ -7303,3 +7309,7 @@ html { scroll-behavior: smooth;}
         z-index: 3;   
     }
 	
+	img.img200 {
+		width: 220px;
+		height: 220px;
+	}
